@@ -9,6 +9,14 @@ The platform supports:
 - Riders creating delivery profiles, going online/offline, accepting orders, and updating delivery progress
 - Realtime and asynchronous workflows across services for order lifecycle updates
 
+## Screenshots
+![y1](https://github.com/user-attachments/assets/35cae9ca-e6f2-4d0f-bb31-ad311249d718)
+![y2](https://github.com/user-attachments/assets/c84bc63c-d3c3-4f3c-8bb0-28552173024f)
+![y3](https://github.com/user-attachments/assets/bce1a977-5ac6-4b9f-ae9b-a7221bc857b2)
+![y4](https://github.com/user-attachments/assets/0430246b-bd06-4783-9b23-71135d920853)
+![y5](https://github.com/user-attachments/assets/cb4e02dc-0d78-49d3-867b-09861511a81a)
+![y6](https://github.com/user-attachments/assets/e3507b82-ab5b-4c7f-8148-45bf5ae5ff93)
+
 ## Why This Project
 
 The motivation behind Yummerz was to move beyond a standard CRUD full-stack app and learn how modern products behave in realistic environments.
