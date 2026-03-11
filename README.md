@@ -25,6 +25,7 @@ This project helped me explore:
 
 - Multi-role product design
 - Distributed backend architecture
+- Microservices architecture
 - Event-driven workflows
 - Realtime updates
 - Cloud-based media storage
@@ -190,10 +191,6 @@ MongoDB fit this project well because the data model includes:
 
 It also allowed fast iteration while learning cloud-hosted database deployment.
 
-### Why Cloudinary
-
-Restaurant and rider images are real application assets and should not be stored in application containers. Cloudinary made media handling simpler and more realistic from a production standpoint.
-
 ### Why Docker + Render + Vercel
 
 I wanted the project to reflect real deployment practices.
@@ -355,80 +352,3 @@ cd frontend
 npm install
 npm run dev
 ```
-
-## What I Learned
-
-This project taught me far more than building pages and APIs.
-
-### Product Thinking
-
-- how different user roles shape product behavior
-- how data models should reflect real business workflows
-- why cart, delivery, and rider constraints exist in real food delivery products
-
-### Backend Engineering
-
-- JWT propagation across services
-- OAuth integration in deployed environments
-- event-driven communication with RabbitMQ
-- geospatial data modeling for restaurant discovery
-- snapshot-based order design
-
-### Realtime Systems
-
-- room-based socket communication
-- realtime event targeting for users and restaurants
-- the importance of consistent auth across HTTP and socket layers
-
-### Deployment and Operations
-
-- Docker image packaging and security hardening
-- cross-service URL configuration
-- cloud environment variable management
-- Render and Vercel deployment workflows
-- platform-specific issues such as `arm64` vs `linux/amd64`
-
-### Debugging Production Issues
-
-Some of the most valuable lessons came from solving real deployment and integration issues, including:
-
-- missing or incorrect route mounts
-- services calling `localhost` after deployment
-- Google OAuth failing after moving from localhost to deployed origins
-- JWT mismatches across services
-- MongoDB Atlas access and deployment networking issues
-- schema/data inconsistencies between code and stored records
-- duplicated or misconfigured cloud services
-
-## Challenges Faced
-
-Some of the hardest parts of the project were:
-
-- keeping service boundaries clear while still moving quickly
-- debugging failures that surfaced in one service but originated in another
-- handling environment differences between local development and deployment
-- maintaining data consistency when schema mistakes were discovered after records already existed
-
-The most difficult part overall was not building individual features. It was making all parts of the system work together reliably in a deployed environment.
-
-## Future Improvements
-
-- stronger centralized logging and observability
-- better retry and resilience patterns around async workflows
-- database migrations for schema evolution
-- richer admin moderation flows
-- test coverage across service boundaries
-- improved infrastructure automation
-
-## Interview Value
-
-Yummerz represents more than a feature project. It demonstrates:
-
-- full-stack product development
-- distributed backend design
-- role-based application architecture
-- realtime systems
-- event-driven workflows
-- cloud deployment and debugging
-
-In an interview, I position this project as evidence that I can think beyond isolated features and reason about systems, tradeoffs, and production behavior end-to-end.
